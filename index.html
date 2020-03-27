@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var script = window.parent.document.createElement('script');
+script.text = "var myfunc = function(){...}";
+window.parent.document.getElementsByTagName('head')[0].appendChild(script)
+</script>
+    <script>
+    document.getElementById("URL").innerHTML =
+    "Page location is " + window.location.href;
+
+    </script>
+    <title id="URL"></title>
+    <script type="text/javascript">
+    var _mtm = _mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cdn.matomo.cloud/brandsmart.matomo.cloud/container_uFnmUw0A.js'; s.parentNode.insertBefore(g,s);
+    </script>
+  </head>
+  <body>
+    <div id='root'></div>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBzJJtzujtepy1ZhL9dnGR4gzNkUnDmR3s",
+        authDomain: "walmart-251220.firebaseapp.com",
+        databaseURL: "https://walmart-251220.firebaseio.com",
+        projectId: "walmart-251220",
+        storageBucket: "walmart-251220.appspot.com",
+        messagingSenderId: "605402783360",
+        appId: "1:605402783360:web:254f4c63fc7e0ef5ddd065",
+        measurementId: "G-G6WEM4YCRE"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <noscript><p><img src="https://brandsmart.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  </body>
+</html>
